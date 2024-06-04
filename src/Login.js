@@ -65,6 +65,11 @@ function Login() {
 
             </div>
             <div className='right-side'>
+                <div className='login-header'>
+                    <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="logo" />
+                    <a href='#'>Criar conta</a>
+
+                </div>
 
             </div>
 
