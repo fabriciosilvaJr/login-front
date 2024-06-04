@@ -1,0 +1,22 @@
+
+.container{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    border: 1px solid black;
+   
+
+}
+.right-side{
+    border: 1px solid black;
+    width: 36%;
+
+
+}
