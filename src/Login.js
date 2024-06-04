@@ -41,7 +41,7 @@ function Login() {
             <div className='left-side'>
                 <IconButton className="icon-button" onClick={handleClick} />
                 <div className='carousel'>
-                    <div className='course'></div>
+                    <div className='tag-course'>Cursos</div>
                     <div className='title'></div>
                     <div className='info'></div>
                     <div className='btn-nav'></div>

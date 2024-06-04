@@ -30,6 +30,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5vw;    
+    gap: 5vw;
     align-self: stretch;
+}
+
+.tag-course {
+    display: flex;
+    border-radius: 9999px;
+    background: #0761E2;
+    width: 54px;
+    height: 16px;
+    padding: 8px 12px;
+    color: #FFF;
+    font-size: 1rem;
+    line-height: 140%;
+    justify-content: center;
+    align-items: center;
+
 }
