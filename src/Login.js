@@ -8,7 +8,7 @@ import IconButton from './components/IconButton';
 function Login() {
     const handleClick = () => {
         alert('Botão clicado!');
-      };
+    };
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -40,6 +40,12 @@ function Login() {
         <div className="container">
             <div className='left-side'>
                 <IconButton className="icon-button" onClick={handleClick} />
+                <div className='carousel'>
+                    <div className='course'></div>
+                    <div className='title'></div>
+                    <div className='info'></div>
+                    <div className='btn-nav'></div>
+                </div>
 
             </div>
             <div className='right-side'>

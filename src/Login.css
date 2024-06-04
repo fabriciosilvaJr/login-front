@@ -23,10 +23,13 @@
     border: 1px solid black;
     width: 36%;
 
-
 }
 
-.icon-button {
+.carousel {
+    border: 1px solid red;
     display: flex;
-
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vw;    
+    align-self: stretch;
 }
