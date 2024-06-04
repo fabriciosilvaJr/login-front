@@ -1,24 +1,32 @@
-
-.container{
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  justify-content: center;
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
 
 }
-.left-side{
+
+.left-side {
     display: flex;
     flex-direction: column;
     width: 64%;
     background-image: url(../public/images/banner-login.png);
     background-repeat: no-repeat;
     background-size: cover;
-   
+    padding: 7.41vh 2.92vw;
+    justify-content: space-between;
+    align-items: flex-start;
 
 }
-.right-side{
+
+.right-side {
     border: 1px solid black;
     width: 36%;
 
+
+}
+
+.icon-button {
+    display: flex;
 
 }

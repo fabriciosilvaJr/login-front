@@ -2,9 +2,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
+import IconButton from './components/IconButton';
 
 
 function Login() {
+    const handleClick = () => {
+        alert('Botão clicado!');
+      };
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -35,6 +39,7 @@ function Login() {
     return (
         <div className="container">
             <div className='left-side'>
+                <IconButton className="icon-button" onClick={handleClick} />
 
             </div>
             <div className='right-side'>
