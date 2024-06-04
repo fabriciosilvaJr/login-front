@@ -42,8 +42,21 @@ function Login() {
                 <IconButton className="icon-button" onClick={handleClick} />
                 <div className='carousel'>
                     <div className='tag-course'>Cursos</div>
-                    <div className='title'></div>
-                    <div className='info'></div>
+                    <h3>Plataforma de cursos completa</h3>
+                    <div className='info'>
+                        <h4>
+                            Lorem ipsum nisl etiam himenaeos ligula augue
+                            vehicula gravida tincidunt, etiam magna sapien gravida sodales
+                            sed vel pulvinar suspendisse, morbi mi proin urna ornare posuere
+                            donec aptent. orci vivamus primis fusce lacinia libero nostra
+                            aliquam vestibulum
+                        </h4>
+                    </div>
+                    <div className='carousel-bar-horizontal'>
+                        <div className='carousel-bar-item active'></div>
+                        <div className='carousel-bar-item'></div>
+                        <div className='carousel-bar-item'></div>
+                    </div>
                     <div className='btn-nav'></div>
                 </div>
 
