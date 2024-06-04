@@ -191,5 +191,19 @@
     border-radius: 8px;
     border: 1px solid #151515;
     cursor: pointer;
-    
+
+}
+
+.separator {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.line {
+    height: 1px;
+    flex: 1 0 0;
+    background: rgba(0, 0, 0, 0.10);
 }

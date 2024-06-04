@@ -87,6 +87,13 @@ function Login() {
                         <img src={`${process.env.PUBLIC_URL}/images/twitter-icon.svg`} alt="twitter" />
                     </div>
                 </div>
+                <div className='separator'>
+                    <div className='line'></div>
+                     <span>ou</span>
+                    <div className='line'></div>
+
+
+                </div>
 
 
             </div>
