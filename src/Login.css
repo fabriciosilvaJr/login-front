@@ -10,7 +10,9 @@
     display: flex;
     flex-direction: column;
     width: 64%;
-    border: 1px solid black;
+    background-image: url(../public/images/banner-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
    
 
 }
