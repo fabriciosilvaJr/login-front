@@ -72,7 +72,20 @@ function Login() {
                 <div className='welcome'>
                     <h2>Boas-vindas!</h2>
                     <span>Entre utilizando uma das opções abaixo</span>
-
+                </div>
+                <div className='login-options'>
+                    <div className='login-option toolzz'>
+                        <img src={`${process.env.PUBLIC_URL}/images/toolzz-icon.svg`} alt="toolzz" />
+                    </div>
+                    <div className='login-option facebook'>
+                        <img src={`${process.env.PUBLIC_URL}/images/facebook-icon.svg`} alt="facebook" />
+                    </div>
+                    <div className='login-option apple'>
+                        <img src={`${process.env.PUBLIC_URL}/images/apple-icon.svg`} alt="apple" />
+                    </div>
+                    <div className='login-option twitter'>
+                        <img src={`${process.env.PUBLIC_URL}/images/twitter-icon.svg`} alt="twitter" />
+                    </div>
                 </div>
 
 
