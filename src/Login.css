@@ -144,6 +144,30 @@
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 140%;
+}
 
+.welcome {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border: 1px solid red
+}
+
+.welcome h2 {
+    color: #0E0E0E;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0;
+}
+
+.welcome span {
+    color: #585858;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 140%;
 
 }
