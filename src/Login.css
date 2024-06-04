@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 64%;
-    background-image: url(../public/images/banner-login.png);
+    background-image: url('../public/images/banner-login.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 7.41vh 2.92vw;
@@ -27,7 +27,7 @@
 }
 
 .carousel {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -84,4 +84,35 @@
 .active{
     background: #FFFFFF;
     
+}
+
+
+.carousel-navigation {
+    display: flex;
+    width: 100%;
+    transform: translateY(-50%);
+    justify-content: end;
+ 
+}
+
+.carousel-arrow {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: all; 
+}
+
+.left-arrow {
+    background-image: url('../public/images/left-arrow.png'); 
+
+}
+
+.right-arrow {
+    background-image: url('../public/images/right-arrow.png');
+    
+}
+.carousel-arrow.active {
+    background-color: transparent;
+    filter: invert(1);
 }

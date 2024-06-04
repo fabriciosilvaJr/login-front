@@ -57,7 +57,10 @@ function Login() {
                         <div className='carousel-bar-item'></div>
                         <div className='carousel-bar-item'></div>
                     </div>
-                    <div className='btn-nav'></div>
+                    <div className="carousel-navigation">
+                        <div className="carousel-arrow left-arrow"></div>
+                        <div className="carousel-arrow right-arrow active"></div>
+                    </div>
                 </div>
 
             </div>
