@@ -5,6 +5,7 @@ import './Login.css';
 import IconButton from './components/IconButton';
 import IconButtonDark from './components/IconButtonDark';
 
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 
 function Login() {
@@ -74,7 +75,7 @@ function Login() {
             <div className='right-side'>
                 <div className='header-mobile'>
                     <IconButtonDark className="icon-button-mobile" onClick={handleClick} />
-                    <a href='https://fabriciologin.netlify.app'>Criar conta</a>
+                    <a href='#'>Criar conta</a>
                 </div>
 
                 <div className='login-header'>
@@ -83,7 +84,7 @@ function Login() {
                         {darkMode ? '🌞' : '🌜'} 
                     </button>
 
-                    <a href='https://fabriciologin.netlify.app/'>Criar conta</a>
+                    <a href='#'>Criar conta</a>
                 </div>
                 <div className='welcome'>
                     <h2>Boas-vindas!</h2>
@@ -177,7 +178,7 @@ function Login() {
                 {errorMessage && <div className="error">{errorMessage}</div>}
                 {successMessage && <div className="success">{successMessage}</div>}
                 <div className='forgot-password'>
-                    <span>Esqueceu sua senha?  <a href='https://fabriciologin.netlify.app'>Recuperar senha</a></span>
+                    <span>Esqueceu sua senha?  <a href='#'>Recuperar senha</a></span>
                 </div>
 
 
