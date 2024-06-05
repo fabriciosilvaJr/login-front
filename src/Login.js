@@ -80,7 +80,7 @@ function Login() {
                 <div className='login-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/${darkMode ? 'logo-dark.svg' : 'logo.svg'}`} alt="logo" />
                     <button onClick={toggleDarkMode} className="dark-mode-toggle">
-                        {darkMode ? '🌞' : '🌜'} {/* Ícones para indicar o modo */}
+                        {darkMode ? '🌞' : '🌜'} 
                     </button>
 
                     <a href='https://fabriciologin.netlify.app/'>Criar conta</a>
