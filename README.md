@@ -27,7 +27,7 @@ A aplicação estará disponível em  [http://localhost:3000](http://localhost:3
 
 Para testar o login utilize o seguinte usuário 
 
-email: usuario@teste.com,
+email: usuario@teste.com
 
 senha: 123456
 
