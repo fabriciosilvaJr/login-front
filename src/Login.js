@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
 import IconButton from './components/IconButton';
-import IconButtonMobile from './components/IconButton';
+import IconButtonDark from './components/IconButtonDark';
 
 
 
@@ -73,12 +73,16 @@ function Login() {
             </div>
             <div className='right-side'>
                 <div className='header-mobile'>
-                    <IconButtonMobile className="icon-button-mobile" onClick={handleClick} />
+                    <IconButtonDark className="icon-button-mobile" onClick={handleClick} />
                     <a>Criar conta</a>
                 </div>
 
                 <div className='login-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/${darkMode ? 'logo-dark.svg' : 'logo.svg'}`} alt="logo" />
+                    <button onClick={toggleDarkMode} className="dark-mode-toggle">
+                        {darkMode ? '🌞' : '🌜'} {/* Ícones para indicar o modo */}
+                    </button>
+
                     <a href='#'>Criar conta</a>
                 </div>
                 <div className='welcome'>
@@ -177,9 +181,6 @@ function Login() {
                     <span>Esqueceu sua senha?  <a>Recuperar senha</a></span>
                 </div>
 
-                <button onClick={toggleDarkMode}>
-                    {darkMode ? 'Modo Claro' : 'Modo Escuro'}
-                </button>
 
             </div>
 

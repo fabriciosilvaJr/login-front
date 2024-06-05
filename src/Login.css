@@ -142,7 +142,6 @@
 .login-header a {
     text-decoration: none;
     color: 0761E2;
-    font-size: 1.125rem;
     font-weight: 500;
     line-height: 140%;
 }
@@ -291,7 +290,6 @@
     width: 20px;
     height: 20px;
     border-radius: 2px;
-    border-radius: 2px;
     border: 2px solid #6A6A6A;
 
 }
@@ -415,6 +413,29 @@
 
 }
 
+.login-header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-header .dark-mode-toggle {
+    background: #000;
+    color: #FFF;
+}
+
+.dark-mode .login-header .dark-mode-toggle {
+    background: #FFF;
+    color: #000;
+}
+
 /* dark mode */
 .container.dark-mode {
     background-color: #222222;
@@ -423,7 +444,7 @@
 
 
 
-.container.dark-mode .welcome h2{
+.container.dark-mode .welcome h2 {
     color: #ffffff;
 
 
@@ -435,49 +456,59 @@
 
 .container.dark-mode .login-option {
     border: 1px solid #ffffff;
-    
+
 }
-.container.dark-mode .login-option img{
+
+.container.dark-mode .login-option img {
     filter: invert(1);
 
 }
-.container.dark-mode .separator span{
+
+.container.dark-mode .separator span {
     color: #909090;
 }
-.container.dark-mode .separator .line{
+
+.container.dark-mode .separator .line {
     background: rgba(255, 255, 255, 0.10);
 }
-.container.dark-mode .form-group label{
-    color:  #EDEDED;
+
+.container.dark-mode .form-group label {
+    color: #EDEDED;
 
 }
+
 .container.dark-mode .input-container input {
     background-color: #2e2e2e;
     color: #909090;
-    border: 1px solid  #5C5C5C;
+    border: 1px solid #5C5C5C;
 }
 
-.container.dark-mode .checkbox-group label{
-    color:  #EDEDED;
+.container.dark-mode .checkbox-group label {
+    margin: 0;
+    color: #EDEDED;
 
 }
+
 
 .dark-mode .checkbox-group input[type="checkbox"] {
     appearance: none;
     width: 20px;
     height: 20px;
-    border: 1px solid #5C5C5C; 
+    vertical-align: middle;
+    border: 2px solid #5C5C5C;
     background-color: #333;
     cursor: pointer;
     position: relative;
-    margin-right: 10px; 
+    border-radius: 2px;
 }
 
 
 
 .dark-mode .checkbox-group input[type="checkbox"]:checked::after {
-    content: '✔'; /* Marca de verificação */
-    color: #ffffff; /* Cor da marca de verificação */
+    content: '✔';
+    /* Marca de verificação */
+    color: #ffffff;
+    /* Cor da marca de verificação */
     position: absolute;
     top: 0;
     left: 3px;
@@ -490,7 +521,8 @@
     .header-mobile {
         display: none;
     }
-    .checkbox-mobile{
+
+    .checkbox-mobile {
         display: none;
     }
 }
@@ -544,11 +576,7 @@
         line-height: 140%;
     }
 
-    .icon-button-mobile {
-        display: flex;
-        filter: invert(1);
 
-    }
 
     .login-header {
         margin-top: 24px;
@@ -557,14 +585,16 @@
     .login-header a {
         display: none;
     }
-    .captcha{
+
+    .captcha {
         display: none;
     }
 
-    .checkbox-group{
+    .checkbox-group {
         display: none;
     }
-    .checkbox-mobile{
+
+    .checkbox-mobile {
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -572,12 +602,36 @@
     }
 
     .checkbox-group label {
-       padding-left: 16px;
-    
+        padding-left: 16px;
+
     }
 
-  
+
+    /* dark mode mobile */
+    .container.dark-mode .header-mobile a {
+        color: #FFF;
+
+    }
+
+
+    .container.dark-mode .icon-button-mobile {
+        filter: invert(1);
+    }
+
+    .container.dark-mode .checkbox-group label {
+        margin: 0;
+        color: #EDEDED;
+
+
+    }
+
+    .container.dark-mode .forgot-password a {
+        color: #EDEDED;
+
+    }
+
+
+
 
 
 }
-
