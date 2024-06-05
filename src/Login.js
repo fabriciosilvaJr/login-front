@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
 import IconButton from './components/IconButton';
+import IconButtonMobile from './components/IconButton';
+
 
 
 function Login() {
@@ -66,6 +68,11 @@ function Login() {
 
             </div>
             <div className='right-side'>
+                <div className='header-mobile'>
+                    <IconButtonMobile className="icon-button-mobile" onClick={handleClick} />
+                    <a>Criar conta</a>
+                </div>
+
                 <div className='login-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="logo" />
                     <a href='#'>Criar conta</a>
@@ -148,6 +155,15 @@ function Login() {
                         <img src="/images/plus.png" alt="Plus Icon" className="button-icon" />
                         Entrar
                     </button>
+                    <div className="checkbox-group checkbox-mobile">
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            checked={rememberMe}
+                            onChange={(e) => setRememberMe(e.target.checked)}
+                        />
+                        <label htmlFor="rememberMe">Manter conectado</label>
+                    </div>
 
 
                 </form>

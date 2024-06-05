@@ -22,11 +22,9 @@
 
 
 .carousel {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 5vw; */
     align-self: stretch;
 
 
@@ -235,7 +233,7 @@
     flex: 1 0 0;
     width: 29.375vw;
 
- 
+
 
 }
 
@@ -295,7 +293,6 @@
     border-radius: 2px;
     border-radius: 2px;
     border: 2px solid #6A6A6A;
-
 
 }
 
@@ -419,25 +416,98 @@
 }
 
 
+
 /* Media Queries */
+@media (min-width: 1024px) {
+    .header-mobile {
+        display: none;
+    }
+    .checkbox-mobile{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .left-side {
         display: none;
-     
+
     }
-  
-    .form-group {
-       width: 90%;
-    }
-    .form-group input {
-        height: 45px;
-     }
-    .captcha{
-        width: 100%;
-    }
+
     .right-side {
         width: 100%;
     }
 
- 
+    .login-user .button-icon {
+        display: none;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .form-group input {
+        height: 45px;
+    }
+
+    .captcha {
+        width: 100%;
+    }
+
+    .forgot-password a {
+        color: #0E0E0E;
+        font-weight: 700;
+        cursor: pointer;
+
+
+    }
+
+    .header-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 24px;
+    }
+
+    .header-mobile a {
+        color: #000;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .icon-button-mobile {
+        display: flex;
+        filter: invert(1);
+
+    }
+
+    .login-header {
+        margin-top: 24px;
+    }
+
+    .login-header a {
+        display: none;
+    }
+    .captcha{
+        display: none;
+    }
+
+    .checkbox-group{
+        display: none;
+    }
+    .checkbox-mobile{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        gap: 16px;
+    }
+
+    .checkbox-group label {
+       padding-left: 16px;
+    
+    }
+  
+
+
 }
