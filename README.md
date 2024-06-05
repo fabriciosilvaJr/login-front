@@ -25,9 +25,10 @@ Front end de login desenvolvido a partir de um layout do figma, layout responsiv
 
 A aplicação estará disponível em  [http://localhost:3000](http://localhost:3000).
 
-Para testar o login utilize o seguinte o usuário 
+Para testar o login utilize o seguinte usuário 
 
 email: usuario@teste.com,
+
 senha: 123456
 
 
