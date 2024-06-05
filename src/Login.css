@@ -415,6 +415,74 @@
 
 }
 
+/* dark mode */
+.container.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+
+
+.container.dark-mode .welcome h2{
+    color: #ffffff;
+
+
+}
+
+.container.dark-mode .welcome span {
+    color: #909090;
+}
+
+.container.dark-mode .login-option {
+    border: 1px solid #ffffff;
+    
+}
+.container.dark-mode .login-option img{
+    filter: invert(1);
+
+}
+.container.dark-mode .separator span{
+    color: #909090;
+}
+.container.dark-mode .separator .line{
+    background: rgba(255, 255, 255, 0.10);
+}
+.container.dark-mode .form-group label{
+    color:  #EDEDED;
+
+}
+.container.dark-mode .input-container input {
+    background-color: #2e2e2e;
+    color: #909090;
+    border: 1px solid  #5C5C5C;
+}
+
+.container.dark-mode .checkbox-group label{
+    color:  #EDEDED;
+
+}
+
+.dark-mode .checkbox-group input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #5C5C5C; 
+    background-color: #333;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px; 
+}
+
+
+
+.dark-mode .checkbox-group input[type="checkbox"]:checked::after {
+    content: '✔'; /* Marca de verificação */
+    color: #ffffff; /* Cor da marca de verificação */
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
 
 
 /* Media Queries */
@@ -507,7 +575,9 @@
        padding-left: 16px;
     
     }
+
   
 
 
 }
+

@@ -16,6 +16,7 @@ function Login() {
     const [rememberMe, setRememberMe] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [successMessage, setSuccessMessage] = useState('');
+    const [darkMode, setDarkMode] = useState(false);
 
     const login = async (e) => {
         e.preventDefault();
@@ -38,9 +39,12 @@ function Login() {
             }
         }
     };
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
 
     return (
-        <div className="container">
+        <div className={`container ${darkMode ? 'dark-mode' : ''}`}>
             <div className='left-side'>
                 <IconButton className="icon-button" onClick={handleClick} />
                 <div className='carousel'>
@@ -74,7 +78,7 @@ function Login() {
                 </div>
 
                 <div className='login-header'>
-                    <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="logo" />
+                    <img src={`${process.env.PUBLIC_URL}/images/${darkMode ? 'logo-dark.svg' : 'logo.svg'}`} alt="logo" />
                     <a href='#'>Criar conta</a>
                 </div>
                 <div className='welcome'>
@@ -172,6 +176,10 @@ function Login() {
                 <div className='forgot-password'>
                     <span>Esqueceu sua senha?  <a>Recuperar senha</a></span>
                 </div>
+
+                <button onClick={toggleDarkMode}>
+                    {darkMode ? 'Modo Claro' : 'Modo Escuro'}
+                </button>
 
             </div>
 
