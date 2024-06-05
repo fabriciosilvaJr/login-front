@@ -18,7 +18,7 @@ Front end de login desenvolvido a partir de um layout do figma, layout responsiv
 
 ## Executando
 
- você pode executar a aplicação com o seguinte comando:
+ Você pode executar a aplicação com o seguinte comando:
 `npm start`
 
 #### Utilizando a aplicação
