@@ -173,7 +173,6 @@ function Login() {
                         <label htmlFor="rememberMe">Manter conectado</label>
                     </div>
 
-
                 </form>
                 {errorMessage && <div className="error">{errorMessage}</div>}
                 {successMessage && <div className="success">{successMessage}</div>}

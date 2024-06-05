@@ -21,6 +21,7 @@
 
 
 
+
 .carousel {
     display: flex;
     flex-direction: column;
@@ -434,6 +435,21 @@
 .dark-mode .login-header .dark-mode-toggle {
     background: #FFF;
     color: #000;
+}
+
+
+.error {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: red;
+}
+
+.success {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #0761E2;
 }
 
 /* dark mode */
