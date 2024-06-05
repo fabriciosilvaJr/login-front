@@ -120,7 +120,7 @@ function Login() {
 
 
                     </div>
-                    <div className="form-group checkbox-group">
+                    <div className="checkbox-group">
                         <input
                             type="checkbox"
                             id="rememberMe"
@@ -129,8 +129,23 @@ function Login() {
                         />
                         <label htmlFor="rememberMe">Manter conectado</label>
                     </div>
-                </form>
+                    <div className='captcha-content'>
+                        <div className='captcha'>
+                            <div className="captcha-group">
+                                <input type="checkbox" id="captcha" />
+                                <label htmlFor="captcha">I am human</label>
+                            </div>
 
+                            <div className="captcha-terms">
+                                <img src="/images/captcha.svg" alt="Captcha" className="captcha-image" />
+
+                                Privacy - Terms
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
 
 
 
