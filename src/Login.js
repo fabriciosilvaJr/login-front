@@ -89,11 +89,40 @@ function Login() {
                 </div>
                 <div className='separator'>
                     <div className='line'></div>
-                     <span>ou</span>
+                    <span>ou</span>
                     <div className='line'></div>
-
-
                 </div>
+                <form className='login-user'>
+                    <div className='form-group'>
+                        <label>Usuário</label>
+                        <div className="input-container">
+                            <img src="/images/user.svg" alt="User Icon" className="input-icon" />
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div className='form-group'>
+                        <label>Senha</label>
+                        <div className="input-container">
+                            <img src="/images/security.svg" alt="Security Icon" className="input-icon" />
+                            <input
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                        </div>
+
+
+                    </div>
+                </form>
+
+
+
 
 
             </div>
