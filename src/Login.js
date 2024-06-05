@@ -74,7 +74,7 @@ function Login() {
             <div className='right-side'>
                 <div className='header-mobile'>
                     <IconButtonDark className="icon-button-mobile" onClick={handleClick} />
-                    <a>Criar conta</a>
+                    <a href='https://www.example.com'>Criar conta</a>
                 </div>
 
                 <div className='login-header'>
@@ -83,7 +83,7 @@ function Login() {
                         {darkMode ? '🌞' : '🌜'} {/* Ícones para indicar o modo */}
                     </button>
 
-                    <a href='#'>Criar conta</a>
+                    <a href='https://www.example.com'>Criar conta</a>
                 </div>
                 <div className='welcome'>
                     <h2>Boas-vindas!</h2>
@@ -177,7 +177,7 @@ function Login() {
                 {errorMessage && <div className="error">{errorMessage}</div>}
                 {successMessage && <div className="success">{successMessage}</div>}
                 <div className='forgot-password'>
-                    <span>Esqueceu sua senha?  <a>Recuperar senha</a></span>
+                    <span>Esqueceu sua senha?  <a href='https://www.example.com'>Recuperar senha</a></span>
                 </div>
 
 
