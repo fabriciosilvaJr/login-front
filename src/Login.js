@@ -11,6 +11,7 @@ function Login() {
     };
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [rememberMe, setRememberMe] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [successMessage, setSuccessMessage] = useState('');
 
@@ -118,6 +119,15 @@ function Login() {
                         </div>
 
 
+                    </div>
+                    <div className="form-group checkbox-group">
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            checked={rememberMe}
+                            onChange={(e) => setRememberMe(e.target.checked)}
+                        />
+                        <label htmlFor="rememberMe">Manter conectado</label>
                     </div>
                 </form>
 
