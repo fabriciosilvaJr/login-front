@@ -93,7 +93,7 @@ function Login() {
                     <span>ou</span>
                     <div className='line'></div>
                 </div>
-                <form className='login-user'>
+                <form className='login-user' onSubmit={login}>
                     <div className='form-group'>
                         <label>Usuário</label>
                         <div className="input-container">
@@ -151,28 +151,14 @@ function Login() {
 
 
                 </form>
+                {errorMessage && <div className="error">{errorMessage}</div>}
+                {successMessage && <div className="success">{successMessage}</div>}
                 <div className='forgot-password'>
                     <span>Esqueceu sua senha?  <a>Recuperar senha</a></span>
                 </div>
 
-
-
-
             </div>
 
-            {/* <form onSubmit={login}>
-                <div>
-                    <label>Email:</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                </div>
-                <div>
-                    <label>Senha:</label>
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            {errorMessage && <div className="error">{errorMessage}</div>}
-            {successMessage && <div className="success">{successMessage}</div>} */}
         </div>
     );
 }
