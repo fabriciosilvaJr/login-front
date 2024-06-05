@@ -222,6 +222,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
+    flex: 1 0 0;
 
 }
 
@@ -253,13 +254,15 @@
 
 .form-group input {
     width: 29.375vw;
-    height: 5.444vh;
+    padding: 0.83vw;
+    gap: 2.08vw;
     align-items: center;
     padding-left: 40px;
     border-radius: 8px;
     border: 1px solid #6A6A6A;
     font-size: 1rem;
     color: #0E0E0E;
+
 
 }
 
@@ -279,6 +282,7 @@
     border-radius: 2px;
     border-radius: 2px;
     border: 2px solid #6A6A6A;
+
 
 }
 
@@ -300,7 +304,7 @@
     margin-bottom: 2.222vh;
     justify-content: space-between;
     padding: 1px;
-    
+
 }
 
 .captcha input[type="checkbox"] {
@@ -334,7 +338,7 @@
     line-height: 20px;
     justify-content: center;
     align-items: flex-end;
-       
+
 }
 
 .captcha-terms a {
@@ -342,13 +346,39 @@
     font-size: 0.75rem;
     text-decoration: none;
 }
-.captcha-content{
+
+.captcha-content {
     margin: auto;
-  
+
 }
-.captcha-group{
+
+.captcha-group {
     display: flex;
     align-items: center;
-    margin-left: 16px ;
+    margin-left: 16px;
 
+}
+
+.login-user button {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.63vw;
+    flex: 1 0 0;
+    padding: 1.85vh 1.25vw;
+    border-radius: 8px;
+    border: none;
+    background: #0761E2;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 140%;
+    cursor: pointer;
+
+}
+.login-user .button-icon {
+    margin-right: 0.5rem; 
 }

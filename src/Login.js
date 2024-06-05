@@ -144,6 +144,11 @@ function Login() {
                         </div>
 
                     </div>
+                    <button type="submit" className="btn-entrar">
+                        <img src="/images/plus.png" alt="Plus Icon" className="button-icon" />
+                        Entrar
+                    </button>
+
 
                 </form>
 
