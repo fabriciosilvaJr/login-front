@@ -151,6 +151,9 @@ function Login() {
 
 
                 </form>
+                <div className='forgot-password'>
+                    <span>Esqueceu sua senha?  <a>Recuperar senha</a></span>
+                </div>
 
 
 

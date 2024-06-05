@@ -379,6 +379,27 @@
     cursor: pointer;
 
 }
+
 .login-user .button-icon {
-    margin-right: 0.5rem; 
+    margin-right: 0.5rem;
+}
+
+.forgot-password {
+    margin: auto;
+    font-size: 1rem;
+    line-height: 140%;
+
+}
+
+.forgot-password span {
+    color: #585858;
+
+
+}
+
+.forgot-password a {
+    color: #0761E2;
+    cursor: pointer;
+
+
 }
