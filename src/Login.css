@@ -20,15 +20,27 @@
 }
 
 
-
-
 .carousel {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
+}
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
+.carousel-item {
+    display: none;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    display: block;
 }
 
 .tag-course {
@@ -43,14 +55,15 @@
     line-height: 140%;
     justify-content: center;
     align-items: center;
-
 }
 
 .carousel h3 {
+    display: flex;
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 140%;
+    align-items: flex-start;
 
 }
 
@@ -62,7 +75,6 @@
     text-align: left;
     margin: 0;
     margin-bottom: 8.89vh;
-
 }
 
 .carousel-bar-horizontal {
@@ -74,24 +86,20 @@
     width: 96px;
     height: 4px;
     background: #222;
-
-
 }
 
-.active {
+.carousel-bar-item.active {
     background: #FFFFFF;
-
 }
-
 
 .carousel-navigation {
     display: flex;
     width: 100%;
     transform: translateY(-50%);
     justify-content: end;
-
-
+    gap: 24px;
 }
+
 
 .carousel-arrow {
     width: 32px;
@@ -99,23 +107,26 @@
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: all;
+    cursor: pointer;
+}
+
+.carousel-arrow:hover {
+    filter: brightness(0) invert(1);
+
+
+
 }
 
 .left-arrow {
-    background-image: url('../public/images/left-arrow.png');
-
+    background: url("../public/images/left-arrow.png") no-repeat center center;
 }
 
 .right-arrow {
-    background-image: url('../public/images/right-arrow.png');
-
+    background: url("../public/images/right-arrow.png") no-repeat center center;
 }
 
-.carousel-arrow.active {
-    background-color: transparent;
-    border: none;
-    filter: invert(1);
-}
+
+
 
 /* login */
 .right-side {
@@ -270,7 +281,7 @@
     padding: 0.83vw;
     gap: 2.08vw;
     align-items: center;
-    padding-left:40px;
+    padding-left: 40px;
     border-radius: 8px;
     border: 1px solid #6A6A6A;
     font-size: 1rem;
