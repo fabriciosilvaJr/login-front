@@ -10,7 +10,7 @@ import IconButtonDark from './components/IconButtonDark';
 
 function Login() {
     const handleClick = () => {
-        alert('Botão clicado!');
+        // alert('Botão clicado!');
     };
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
