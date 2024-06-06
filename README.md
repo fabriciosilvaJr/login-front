@@ -36,7 +36,7 @@ email: usuario@teste.com
 senha: 123456
 
 ### Link da aplicação online
-[https://fabriciologin.netlify.app](https://fabriciologin.netlify.app)
+[http://chargecore.cloud](http://chargecore.cloud)
 
 
 
