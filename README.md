@@ -2,7 +2,11 @@
 
 Front end de login desenvolvido a partir de um layout do figma, layout responsivo e com funcionalidade de dark mode.
 
-![image](https://github.com/fabriciosilvaJr/login-front/assets/17913188/ddd73087-cc76-432c-b40b-61b7e769c8bb)
+
+![image](https://github.com/fabriciosilvaJr/login-front/assets/17913188/7bffa58b-4640-424d-bec0-c8235b92b8d2)
+
+
+
 ## Instalação
 
 1. Clone o repositório do GitHub:
