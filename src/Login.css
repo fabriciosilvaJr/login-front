@@ -411,8 +411,7 @@
 .forgot-password a {
     color: #0761E2;
     cursor: pointer;
-
-
+    text-decoration: none;
 }
 
 .login-header button {
@@ -591,6 +590,7 @@
         font-size: 1.125rem;
         font-weight: 500;
         line-height: 140%;
+        text-decoration: none;
     }
 
 
