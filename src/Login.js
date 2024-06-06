@@ -25,7 +25,7 @@ function Login() {
         setSuccessMessage('');
 
         try {
-            const response = await axios.post('http://chargecore.cloud/api/login', {
+            const response = await axios.post('http://chargecore.cloud:8080/api/login', {
                 email,
                 password
             });

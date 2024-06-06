@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "http://fabriciologin.netlify.app/:splat"
-  status = 200
-  force = true
