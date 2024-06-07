@@ -2,75 +2,64 @@ import React, { useState, useEffect } from 'react';
 import './Carousel.css';
 
 const Carousel = () => {
+    const slides = [
+        {
+            tag: 'Cursos',
+            title: 'Plataforma de cursos completa',
+            description: 'Lorem ipsum nisl etiam himenaeos ligula augue vehicula gravida tincidunt, etiam magna sapien gravida sodales sed vel pulvinar suspendisse, morbi mi proin urna ornare posuere donec aptent. orci vivamus primis fusce lacinia libero nostra aliquam vestibulum'
+        },
+        {
+            tag: 'Cursos',
+            title: 'Aprenda com os melhores',
+            description: 'Aprenda com profissionais renomados e melhore suas habilidades com cursos dinâmicos e interativos.'
+        },
+        {
+            tag: 'Cursos',
+            title: 'Certificação reconhecida',
+            description: 'Obtenha certificações que são reconhecidas no mercado e aumente suas oportunidades de carreira.'
+        }
+    ];
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const slideCarousel = (direction) => {
-        const totalSlides = document.querySelectorAll('.carousel-item').length;
+        const totalSlides = slides.length;
         let newSlide = currentSlide + direction;
         if (newSlide >= totalSlides) newSlide = 0;
         if (newSlide < 0) newSlide = totalSlides - 1;
         setCurrentSlide(newSlide);
     };
 
-    useEffect(() => {
-        const items = document.querySelectorAll('.carousel-item');
-        const dots = document.querySelectorAll('.carousel-bar-item');
-        items.forEach((item, index) => {
-            item.classList.remove('active');
-            dots[index].classList.remove('active');
-            if (index === currentSlide) {
-                item.classList.add('active');
-                dots[index].classList.add('active');
-            }
-        });
-    }, [currentSlide]);
-
     return (
         <div className='carousel'>
             <div className='carousel-inner'>
-                <div className='carousel-item active'>
-                    <div className='tag-course'>Cursos</div>
-                    <h3>Plataforma de cursos completa</h3>
-                    <div className='info'>
-                        <h4>
-                            Lorem ipsum nisl etiam himenaeos ligula augue
-                            vehicula gravida tincidunt, etiam magna sapien gravida sodales
-                            sed vel pulvinar suspendisse, morbi mi proin urna ornare posuere
-                            donec aptent. orci vivamus primis fusce lacinia libero nostra
-                            aliquam vestibulum
-                        </h4>
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`carousel-item ${index === currentSlide ? 'active' : ''}`}
+                    >
+                        <div className='tag-course'>{slide.tag}</div>
+                        <h3>{slide.title}</h3>
+                        <div className='info'>
+                            <h4>{slide.description}</h4>
+                        </div>
                     </div>
-                </div>
-                <div className='carousel-item'>
-                    <div className='tag-course'>Cursos</div>
-                    <h3>Aprenda com os melhores</h3>
-                    <div className='info'>
-                        <h4>
-                            Aprenda com profissionais renomados e melhore suas habilidades com cursos dinâmicos e interativos.
-                        </h4>
-                    </div>
-                </div>
-                <div className='carousel-item'>
-                    <div className='tag-course'>Cursos</div>
-                    <h3>Certificação reconhecida</h3>
-                    <div className='info'>
-                        <h4>
-                            Obtenha certificações que são reconhecidas no mercado e aumente suas oportunidades de carreira.
-                        </h4>
-                    </div>
-                </div>
+                ))}
             </div>
             <div className='carousel-bar-horizontal'>
-                <div className='carousel-bar-item active'></div>
-                <div className='carousel-bar-item'></div>
-                <div className='carousel-bar-item'></div>
+                {slides.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`carousel-bar-item ${index === currentSlide ? 'active' : ''}`}
+                        onClick={() => setCurrentSlide(index)}
+                    ></div>
+                ))}
             </div>
             <div className="carousel-navigation">
                 <div className="carousel-arrow left-arrow" onClick={() => slideCarousel(-1)}></div>
-                <div className="carousel-arrow right-arrow active" onClick={() => slideCarousel(1)}></div>
+                <div className="carousel-arrow right-arrow" onClick={() => slideCarousel(1)}></div>
             </div>
         </div>
-
 
     );
 
